@@ -1,0 +1,11 @@
+C:\Users\fabia\webscraper\target\debug\deps\string_cache-a27c03f6b3ddc131.d: C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\lib.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\atom.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\dynamic_set.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\static_sets.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\trivial_impls.rs
+
+C:\Users\fabia\webscraper\target\debug\deps\libstring_cache-a27c03f6b3ddc131.rlib: C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\lib.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\atom.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\dynamic_set.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\static_sets.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\trivial_impls.rs
+
+C:\Users\fabia\webscraper\target\debug\deps\libstring_cache-a27c03f6b3ddc131.rmeta: C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\lib.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\atom.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\dynamic_set.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\static_sets.rs C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\trivial_impls.rs
+
+C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\lib.rs:
+C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\atom.rs:
+C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\dynamic_set.rs:
+C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\static_sets.rs:
+C:\Users\fabia\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\string_cache-0.8.9\src\trivial_impls.rs:
