@@ -2,16 +2,12 @@ use std::env;
 use reqwest;
 use scraper::{Html, Selector};
 
-/// Simple web scraper that fetches a URL and prints all <h1> titles.
-///
-/// Usage:
-///   cargo run https://example.com
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    // Read CLI arguments (the first arg is the program name, so we skip it)
+    // Read CLI arguments
     let args: Vec<String> = env::args().collect();
 
-    // If the user provided a URL, use it. Otherwise, fall back to a default.
+    // Use provided URL or default
     let url = if args.len() > 1 {
         &args[1]
     } else {
@@ -20,21 +16,36 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     println!("Fetching HTML from: {}", url);
 
-    // 1. Fetch the page
+    // Fetch the page
     let body = reqwest::get(url).await?.text().await?;
 
-    // 2. Parse the HTML document
+    // Parse HTML
     let document = Html::parse_document(&body);
 
-    // 3. Select all <h1> elements
-    let selector = Selector::parse("h1").unwrap();
+    // Feature 1: SCRAPE <h1>
+    let h1_selector = Selector::parse("h1").unwrap();
 
     println!("\nFound <h1> titles:");
-
-    // 4. Loop through and print them
-    for element in document.select(&selector) {
+    for element in document.select(&h1_selector) {
         let text = element.text().collect::<Vec<_>>().join(" ");
         println!("- {}", text);
+    }
+
+    // Feature 2: SCRAPE LINKS
+    let link_selector = Selector::parse("a").unwrap();
+
+    println!("\nFound links:");
+    for element in document.select(&link_selector) {
+        let link_text = element
+            .text()
+            .collect::<Vec<_>>()
+            .join(" ")
+            .trim()
+            .to_string();
+
+        if let Some(href) = element.value().attr("href") {
+            println!("- [{}] ({})", link_text, href);
+        }
     }
 
     Ok(())
