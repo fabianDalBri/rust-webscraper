@@ -1,0 +1,16 @@
+{
+  "url": "https://example.com",
+  "headings": {
+    "h1": [
+      "Example Domain"
+    ],
+    "h2": [],
+    "h3": []
+  },
+  "links": [
+    {
+      "text": "Learn more",
+      "href": "https://iana.org/domains/example"
+    }
+  ]
+}

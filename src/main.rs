@@ -1,6 +1,27 @@
 use std::env;
 use reqwest;
 use scraper::{Html, Selector};
+use serde::Serialize;
+
+#[derive(Serialize)]
+struct LinkInfo {
+    text: String,
+    href: String,
+}
+
+#[derive(Serialize)]
+struct ScrapeResult {
+    url: String,
+    headings: Headings,
+    links: Vec<LinkInfo>,
+}
+
+#[derive(Serialize)]
+struct Headings {
+    h1: Vec<String>,
+    h2: Vec<String>,
+    h3: Vec<String>,
+}
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -23,12 +44,20 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let document = Html::parse_document(&body);
 
     // Feature 1: HEADINGS (H1, H2, H3)
-    let heading_levels = ["h1", "h2", "h3"];
+    let mut headings = Headings {
+        h1: Vec::new(),
+        h2: Vec::new(),
+        h3: Vec::new(),
+    };
 
-    for level in &heading_levels {
+    let heading_levels = [
+        ("h1", &mut headings.h1),
+        ("h2", &mut headings.h2),
+        ("h3", &mut headings.h3),
+    ];
+
+    for (level, store) in heading_levels {
         let selector = Selector::parse(level).unwrap();
-
-        println!("\nFound <{}> headings:", level.to_uppercase());
 
         for element in document.select(&selector) {
             let text = element
@@ -39,15 +68,16 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 .to_string();
 
             if !text.is_empty() {
-                println!("- {}", text);
+                store.push(text);
             }
         }
     }
 
     // Feature 2: SCRAPE LINKS
+    let mut links: Vec<LinkInfo> = Vec::new();
+
     let link_selector = Selector::parse("a").unwrap();
 
-    println!("\nFound links:");
     for element in document.select(&link_selector) {
         let link_text = element
             .text()
@@ -57,9 +87,23 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             .to_string();
 
         if let Some(href) = element.value().attr("href") {
-            println!("- [{}] ({})", link_text, href);
+            links.push(LinkInfo {
+                text: link_text,
+                href: href.to_string(),
+            });
         }
     }
+
+    let result = ScrapeResult {
+        url: url.to_string(),
+        headings,
+        links,
+    };
+
+    let json_string = serde_json::to_string_pretty(&result)?;
+    std::fs::write("output.json", json_string)?;
+
+    println!("\nSaved results to output.json");
 
     Ok(())
 }
