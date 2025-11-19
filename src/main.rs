@@ -1,3 +1,4 @@
+use url::Url;
 use std::env;
 use reqwest;
 use scraper::{Html, Selector};
@@ -34,6 +35,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     } else {
         "https://example.com"
     };
+
+    let base_url = Url::parse(url)?;
 
     println!("Fetching HTML from: {}", url);
 
@@ -72,6 +75,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             }
         }
     }
+    
 
     // Feature 2: SCRAPE LINKS
     let mut links: Vec<LinkInfo> = Vec::new();
@@ -87,11 +91,15 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             .to_string();
 
         if let Some(href) = element.value().attr("href") {
-            links.push(LinkInfo {
+            if let Ok(resolved) = base_url.join(href) {
+                links.push(LinkInfo {
                 text: link_text,
-                href: href.to_string(),
+                href: resolved.to_string(),
             });
         }
+        
+}
+
     }
 
     let result = ScrapeResult {
