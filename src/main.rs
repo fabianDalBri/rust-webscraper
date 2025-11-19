@@ -4,10 +4,10 @@ use scraper::{Html, Selector};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    // Read CLI arguments
+    // 1. Read CLI arguments
     let args: Vec<String> = env::args().collect();
 
-    // Use provided URL or default
+    // 2. Use provided URL or default
     let url = if args.len() > 1 {
         &args[1]
     } else {
@@ -16,19 +16,32 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     println!("Fetching HTML from: {}", url);
 
-    // Fetch the page
+    // 3. Fetch the page
     let body = reqwest::get(url).await?.text().await?;
 
-    // Parse HTML
+    // 4. Parse HTML
     let document = Html::parse_document(&body);
 
-    // Feature 1: SCRAPE <h1>
-    let h1_selector = Selector::parse("h1").unwrap();
+    // Feature 1: HEADINGS (H1, H2, H3)
+    let heading_levels = ["h1", "h2", "h3"];
 
-    println!("\nFound <h1> titles:");
-    for element in document.select(&h1_selector) {
-        let text = element.text().collect::<Vec<_>>().join(" ");
-        println!("- {}", text);
+    for level in &heading_levels {
+        let selector = Selector::parse(level).unwrap();
+
+        println!("\nFound <{}> headings:", level.to_uppercase());
+
+        for element in document.select(&selector) {
+            let text = element
+                .text()
+                .collect::<Vec<_>>()
+                .join(" ")
+                .trim()
+                .to_string();
+
+            if !text.is_empty() {
+                println!("- {}", text);
+            }
+        }
     }
 
     // Feature 2: SCRAPE LINKS
