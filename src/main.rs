@@ -3,7 +3,7 @@ use std::env;
 use reqwest;
 use scraper::{Html, Selector};
 use serde::Serialize;
-use indicatif::{ProgressBar, ProgressStyle}; // <-- added
+use indicatif::{ProgressBar, ProgressStyle};
 
 #[derive(Serialize)]
 struct LinkInfo {
