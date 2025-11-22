@@ -3,6 +3,7 @@ use std::env;
 use reqwest;
 use scraper::{Html, Selector};
 use serde::Serialize;
+use indicatif::{ProgressBar, ProgressStyle}; // <-- added
 
 #[derive(Serialize)]
 struct LinkInfo {
@@ -76,13 +77,26 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
     }
     
-
     // Feature 2: SCRAPE LINKS
     let mut links: Vec<LinkInfo> = Vec::new();
 
     let link_selector = Selector::parse("a").unwrap();
+    let all_link_elements: Vec<_> = document.select(&link_selector).collect();
 
-    for element in document.select(&link_selector) {
+    
+    // Create progress bar based on number of <a> elements
+    let pb = ProgressBar::new(all_link_elements.len() as u64);
+    pb.set_style(
+        ProgressStyle::with_template("[{bar:40.green/white}] {pos}/{len} links processed")?
+            .progress_chars("=>-"),
+    );
+    // --------------------------------
+
+    // Iterate through every link element
+    for element in all_link_elements {
+        // Update progress bar by 1 step
+        pb.inc(1);
+
         let link_text = element
             .text()
             .collect::<Vec<_>>()
@@ -93,14 +107,15 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         if let Some(href) = element.value().attr("href") {
             if let Ok(resolved) = base_url.join(href) {
                 links.push(LinkInfo {
-                text: link_text,
-                href: resolved.to_string(),
-            });
+                    text: link_text,
+                    href: resolved.to_string(),
+                });
+            }
         }
-        
-}
-
     }
+
+    pb.finish_with_message("Done processing links!");
+    // END PROGRESS BAR  
 
     let result = ScrapeResult {
         url: url.to_string(),

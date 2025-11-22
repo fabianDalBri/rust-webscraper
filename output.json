@@ -1,16 +1,314 @@
 {
-  "url": "https://example.com",
+  "url": "https://www.traineeguiden.se/trainee-program/?industry=it",
   "headings": {
     "h1": [
-      "Example Domain"
+      "Hitta Traineeprogram"
     ],
-    "h2": [],
-    "h3": []
+    "h2": [
+      "Volvo Group Finance Graduate Program",
+      "Operations Graduate Program",
+      "Zington Accelerate",
+      "Sales talent programme - Traineeprogram inom försäljning",
+      "Traineeprogram Omegapoint - Säker digitalisering",
+      "Basalt Academy Professional Program",
+      "Implemas Traineeprogram",
+      "Advanias traineeprogram Advance",
+      "Sopra Steria Accelerate",
+      "IT-traineeprogram hos Polisen",
+      "Södra Traineeprogram",
+      "Granitor Automation School",
+      "Arla F15 Graduate Programme",
+      "Executive Management Trainee at Dustin",
+      "Ateas management traineeprogram",
+      "Tech Trainee Programme",
+      "Migrationsverkets it-traineeprogram",
+      "Accigos konsultprogram",
+      "Vattenfall International Trainee Programme",
+      "SJ AB Management Trainee Program",
+      "CGI Selected",
+      "LFVs tekniska traineeprogram",
+      "Skatteverkets IT-traineeprogram",
+      "CombinedX traineeprogram",
+      "Trainee JM",
+      "PostNord Graduate Program 2025",
+      "Familjen Helsingborgs traineeprogram",
+      "Columbus Accelerator Program",
+      "IgnITe Graduate Program",
+      "European Graduate Program",
+      "Trainee Sundsvallsregionen",
+      "Global Sourcing Graduate Program",
+      "Tetra Pak Future Talent Programme",
+      "Early Talent Program - Development and Consulting",
+      "Sofigate Trainee",
+      "SKF Global Graduate Programme",
+      "Swedbank Analyst Program",
+      "Scandic Hotels Tech Trainee Program",
+      "Future Talent Programme - for a healthier tomorrow",
+      "Trainee Ringerike",
+      "European Trainee Program",
+      "Koncerntrainee",
+      "Prenumerera på nya tjänster"
+    ],
+    "h3": [
+      "Här hittar du allt"
+    ]
   },
   "links": [
     {
-      "text": "Learn more",
-      "href": "https://iana.org/domains/example"
+      "text": "Till sidans huvudinnehåll",
+      "href": "https://www.traineeguiden.se/trainee-program/?industry=it#content"
+    },
+    {
+      "text": "",
+      "href": "https://www.traineeguiden.se/"
+    },
+    {
+      "text": "Hur funkar det?",
+      "href": "https://www.traineeguiden.se/hur-funkar-det/"
+    },
+    {
+      "text": "Certifikatet",
+      "href": "https://www.traineeguiden.se/certifikatet/"
+    },
+    {
+      "text": "TraineeDagen",
+      "href": "https://www.traineeguiden.se/traineedagen/"
+    },
+    {
+      "text": "Nyheter",
+      "href": "https://www.traineeguiden.se/nyheter/"
+    },
+    {
+      "text": "Kontakt",
+      "href": "https://www.traineeguiden.se/kontakt/"
+    },
+    {
+      "text": "Hitta Traineeprogram",
+      "href": "https://www.traineeguiden.se/trainee-program/"
+    },
+    {
+      "text": "Läs mer om Volvo Group Finance Graduate Program",
+      "href": "https://www.traineeguiden.se/trainee-program/volvo-group-finance-graduate-program/"
+    },
+    {
+      "text": "Läs mer om Operations Graduate Program",
+      "href": "https://www.traineeguiden.se/trainee-program/operations-graduate-program/"
+    },
+    {
+      "text": "Läs mer om Zington Accelerate",
+      "href": "https://www.traineeguiden.se/trainee-program/zington-accelerate/"
+    },
+    {
+      "text": "Läs mer om Sales talent programme - Traineeprogram inom försäljning",
+      "href": "https://www.traineeguiden.se/trainee-program/sales-talent-programme-traineeprogram-inom-forsaljning/"
+    },
+    {
+      "text": "Läs mer om Traineeprogram Omegapoint - Säker digitalisering",
+      "href": "https://www.traineeguiden.se/trainee-program/traineeprogram-saker-digitalisering/"
+    },
+    {
+      "text": "Läs mer om Basalt Academy Professional Program",
+      "href": "https://www.traineeguiden.se/trainee-program/basalt-academy-professional-program/"
+    },
+    {
+      "text": "Läs mer om Implemas Traineeprogram",
+      "href": "https://www.traineeguiden.se/trainee-program/implemas-traineeprogram/"
+    },
+    {
+      "text": "Läs mer om Advanias traineeprogram Advance",
+      "href": "https://www.traineeguiden.se/trainee-program/advanias-traineeprogram-advance/"
+    },
+    {
+      "text": "Läs mer om Sopra Steria Accelerate",
+      "href": "https://www.traineeguiden.se/trainee-program/sopra-steria-accelerate/"
+    },
+    {
+      "text": "Läs mer om IT-traineeprogram hos Polisen",
+      "href": "https://www.traineeguiden.se/trainee-program/it-traineeprogram-hos-polisen/"
+    },
+    {
+      "text": "Läs mer om Södra Traineeprogram",
+      "href": "https://www.traineeguiden.se/trainee-program/sodra-traineeprogram/"
+    },
+    {
+      "text": "Läs mer om Granitor Automation School",
+      "href": "https://www.traineeguiden.se/trainee-program/granitor-automation-school/"
+    },
+    {
+      "text": "Läs mer om Arla F15 Graduate Programme",
+      "href": "https://www.traineeguiden.se/trainee-program/arla-f15-graduate-programme/"
+    },
+    {
+      "text": "Läs mer om Executive Management Trainee at Dustin",
+      "href": "https://www.traineeguiden.se/trainee-program/executive-management-trainee-at-dustin/"
+    },
+    {
+      "text": "Läs mer om Ateas management traineeprogram",
+      "href": "https://www.traineeguiden.se/trainee-program/ateas-management-traineeprogram/"
+    },
+    {
+      "text": "Läs mer om Tech Trainee Programme",
+      "href": "https://www.traineeguiden.se/trainee-program/tech-trainee-programme/"
+    },
+    {
+      "text": "Läs mer om Migrationsverkets it-traineeprogram",
+      "href": "https://www.traineeguiden.se/trainee-program/migrationsverkets-it-traineeprogram/"
+    },
+    {
+      "text": "Läs mer om Accigos konsultprogram",
+      "href": "https://www.traineeguiden.se/trainee-program/accigos-konsultprogram/"
+    },
+    {
+      "text": "Läs mer om Vattenfall International Trainee Programme",
+      "href": "https://www.traineeguiden.se/trainee-program/vattenfall-international-trainee-programme/"
+    },
+    {
+      "text": "Läs mer om SJ AB Management Trainee Program",
+      "href": "https://www.traineeguiden.se/trainee-program/sj-ab-management-trainee-program/"
+    },
+    {
+      "text": "Läs mer om CGI Selected",
+      "href": "https://www.traineeguiden.se/trainee-program/cgi-selected/"
+    },
+    {
+      "text": "Läs mer om LFVs tekniska traineeprogram",
+      "href": "https://www.traineeguiden.se/trainee-program/lfvs-tekniska-traineeprogram/"
+    },
+    {
+      "text": "Läs mer om Skatteverkets IT-traineeprogram",
+      "href": "https://www.traineeguiden.se/trainee-program/skatteverkets-it-traineeprogram/"
+    },
+    {
+      "text": "Läs mer om CombinedX traineeprogram",
+      "href": "https://www.traineeguiden.se/trainee-program/combinedx-traineeprogram/"
+    },
+    {
+      "text": "Läs mer om Trainee JM",
+      "href": "https://www.traineeguiden.se/trainee-program/trainee-jm/"
+    },
+    {
+      "text": "Läs mer om PostNord Graduate Program 2025",
+      "href": "https://www.traineeguiden.se/trainee-program/postnord-graduate-program/"
+    },
+    {
+      "text": "Läs mer om Familjen Helsingborgs traineeprogram",
+      "href": "https://www.traineeguiden.se/trainee-program/familjen-helsingborgs-traineeprogram/"
+    },
+    {
+      "text": "Läs mer om Columbus Accelerator Program",
+      "href": "https://www.traineeguiden.se/trainee-program/columbus-accelerator-program/"
+    },
+    {
+      "text": "Läs mer om IgnITe Graduate Program",
+      "href": "https://www.traineeguiden.se/trainee-program/ignite-graduate-program/"
+    },
+    {
+      "text": "Läs mer om European Graduate Program",
+      "href": "https://www.traineeguiden.se/trainee-program/european-graduate-program/"
+    },
+    {
+      "text": "Läs mer om Trainee Sundsvallsregionen",
+      "href": "https://www.traineeguiden.se/trainee-program/trainee-sundsvallsregionen/"
+    },
+    {
+      "text": "Läs mer om Global Sourcing Graduate Program",
+      "href": "https://www.traineeguiden.se/trainee-program/global-sourcing-graduate-program/"
+    },
+    {
+      "text": "Läs mer om Tetra Pak Future Talent Programme",
+      "href": "https://www.traineeguiden.se/trainee-program/tetra-pak-future-talent-programme/"
+    },
+    {
+      "text": "Läs mer om Early Talent Program - Development and Consulting",
+      "href": "https://www.traineeguiden.se/trainee-program/early-talent-program-development-and-consulting/"
+    },
+    {
+      "text": "Läs mer om Sofigate Trainee",
+      "href": "https://www.traineeguiden.se/trainee-program/sofigate-trainee/"
+    },
+    {
+      "text": "Läs mer om SKF Global Graduate Programme",
+      "href": "https://www.traineeguiden.se/trainee-program/skf-global-graduate-programme/"
+    },
+    {
+      "text": "Läs mer om Swedbank Analyst Program",
+      "href": "https://www.traineeguiden.se/trainee-program/swedbank-analyst-program/"
+    },
+    {
+      "text": "Läs mer om Scandic Hotels Tech Trainee Program",
+      "href": "https://www.traineeguiden.se/trainee-program/scandic-hotels-tech-trainee-program/"
+    },
+    {
+      "text": "Läs mer om Future Talent Programme - for a healthier tomorrow",
+      "href": "https://www.traineeguiden.se/trainee-program/future-talent-programme-for-a-healthier-tomorrow/"
+    },
+    {
+      "text": "Läs mer om Trainee Ringerike",
+      "href": "https://www.traineeguiden.se/trainee-program/trainee-ringerike/"
+    },
+    {
+      "text": "Läs mer om European Trainee Program",
+      "href": "https://www.traineeguiden.se/trainee-program/european-trainee-program/"
+    },
+    {
+      "text": "Läs mer om Koncerntrainee",
+      "href": "https://www.traineeguiden.se/trainee-program/koncerntrainee/"
+    },
+    {
+      "text": "",
+      "href": "https://www.traineeguiden.se/"
+    },
+    {
+      "text": "Följ oss på facebook",
+      "href": "https://www.facebook.com/TraineeGuiden.se/"
+    },
+    {
+      "text": "Följ oss på instagram",
+      "href": "https://www.instagram.com/traineeguiden/"
+    },
+    {
+      "text": "Följ oss på linkedin",
+      "href": "https://www.linkedin.com/company/traineeguiden"
+    },
+    {
+      "text": "info@traineeguiden.se",
+      "href": "mailto:info@traineeguiden.se}"
+    },
+    {
+      "text": "076-136 64 30",
+      "href": "tel:076-136 64 30}"
+    },
+    {
+      "text": "Om Oss",
+      "href": "https://www.traineeguiden.se/om-oss/"
+    },
+    {
+      "text": "TraineeDagen",
+      "href": "https://www.traineeguiden.se/traineedagen/"
+    },
+    {
+      "text": "Certifikatet",
+      "href": "https://www.traineeguiden.se/certifikatet/"
+    },
+    {
+      "text": "Hur funkar det?",
+      "href": "https://www.traineeguiden.se/hur-funkar-det/"
+    },
+    {
+      "text": "Kontakt",
+      "href": "https://www.traineeguiden.se/kontakt/"
+    },
+    {
+      "text": "Cookies",
+      "href": "https://www.traineeguiden.se/cookies/"
+    },
+    {
+      "text": "cookies",
+      "href": "https://www.traineeguiden.se/trainee-program/?industry=it"
+    },
+    {
+      "text": "Se alla lediga Traineetjänster",
+      "href": "https://www.traineeguiden.se/trainee-program/"
     }
   ]
 }
